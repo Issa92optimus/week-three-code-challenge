@@ -1,0 +1,25 @@
+{
+  "name": "week3-code-challenge",
+  "version": "1.0.0",
+  "description": "a ticket booking movie app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Issa92optimus/week3-code-challenge.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "bootstrap"
+  ],
+  "author": "Issa Changawa.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Issa92optimus/week3-code-challenge/issues"
+  },
+  "homepage": "https://github.com/Issa92optimus/week3-code-challenge#readme"
+}
