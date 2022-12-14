@@ -10,34 +10,34 @@ const description = document.querySelector('#description')
 const showtime = document.querySelector('#showTime')
 const availableTickets = document.querySelector('#availableTickets')
 
-function getfilms(data){
-        title.innerText = data.title
-        description.innerText = data.description
-        showtime.innerText = data.showtime
-        let remainingTick = data.capacity - data.tickets_sold
+function getfilms(films){
+        title.innerText = films.title
+        description.innerText = films.description
+        showtime.innerText = films.showtime
+        let remainingTick = films.capacity - films.tickets_sold
         availableTickets.innerText = remainingTick
-            poster.src = data.poster 
+            poster.src = films.poster 
 }
 
-fetch("http://localhost:3000/films/")
+fetch("https://issa92optimus.github.io/db.json")
     .then(res => res.json())
     .then(data => {
-        data.forEach((film) => {
+        data.films.forEach((films) => {
         const li = document.createElement('li')
-        li.innerText = film.title
+        li.innerText = films.title
         ulMenu.appendChild(li)
 
         li.addEventListener('click', () => {
-            getfilms(film)
+            getfilms(films)
         })
         })
             })
 
 
-fetch("http://localhost:3000/films/1")
+fetch("https://issa92optimus.github.io/db.json")
     .then(res => res.json())
     .then(data => {
-            getfilms(data) 
+            getfilms(data.films[0]) 
             })
 
             
