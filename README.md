@@ -32,7 +32,9 @@ This is very straight forward and can be done in either two ways.You can run on 
 
 -npm run serve
 
-Or you can open browser by clicking the "Go Live" button on your visual studio code.
+The link below opens the project to the browser:
+
+     https://issa92optimus.github.io/week-three-code-challenge/
 
 On the browser the page reloads by clicking different names of the films in the menu.
 
